@@ -1,0 +1,10 @@
+.jumbotron
+  - if user_signed_in?
+    %h2 Salut à toi oh jeune (ou moins jeune...) aventurier du lundi matin!
+    %p.lead
+      Vous êtes ici à la racine de votre application celle-ci pointe sur le show du "current user".
+      Rappellez vous que la liste des instructions à suivre est 
+      %a{href: "https://wcs-2015.hackpad.com/Atelier-BDD-JPMIDo1FZyS"} ici.
+      Les tests c'est pas la partie la plus digeste du code (enfin pour moi...) mais c'est aussi et surtout une partie que l'on ne peut négliger!!
+      Il ne vous reste que 2 semaines avant la pause ne lachez rien!! Bon Chance ;)
+    = link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => 'btn btn-large btn-danger'
